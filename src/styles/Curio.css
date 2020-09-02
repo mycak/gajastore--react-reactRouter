@@ -1,0 +1,30 @@
+.curio--container {
+    margin: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    text-align: center;
+}
+
+.curio--image {
+    height: 10vh;
+    margin-top: 1em;
+}
+
+.curio--image img {
+    width: 100%;
+    height: 100%;
+}
+
+.curio--title {
+    margin-top: 1.2em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.curio--text {
+    margin-top: 1em ;
+    margin-bottom: 2em ;
+    font-size: .8em;
+}
+

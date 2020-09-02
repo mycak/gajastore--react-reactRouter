@@ -1,0 +1,6 @@
+.shop--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10em;
+    padding-top: 8em;
+}

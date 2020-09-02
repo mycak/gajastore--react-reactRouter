@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Architects Daughter', cursive;
+}
+
+/*   HERO SITE  */
+
+.header {
+    min-height: 100vh;
+    margin: 0 auto;
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.header--container {
+    min-height: 100vh;
+    background-color: rgb(36, 36, 36, .4);
+    overflow: auto;
+    font-weight: lighter;
+}
+
+/* SECTIONS SITES */
+
+.section--decription {
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.section--decription--history {
+    overflow: auto;
+    min-height: 100vh;
+}
+
+.section--curios {
+    background-color: black;
+    color: #fff;
+}
+
+.curios--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    overflow: auto;
+}
+
+.section--description--shop {
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.section--contact {
+    min-height: 100vh;
+    margin: 0 auto;
+    background-image: url('../images/kontakt.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* LAYERS */
+
+.layer--grey--1 {
+    background-color: #C0C0C0;
+}
+
+.layer--grey--2 {
+    background-color: #D3D3D3	;
+}
+
+.filter--color {
+    filter: invert(35%) sepia(20%) saturate(1974%) hue-rotate(303deg) brightness(113%) contrast(100%);
+}
+

@@ -1,0 +1,44 @@
+.button--container {
+    margin: 1em;
+}
+
+.button {
+	background-color:rgba(255, 255, 255, 0.2);
+	border-radius: 2em;
+	border: 1px solid #fff;
+	display: inline-block;
+	cursor: pointer;
+	color:#fff;
+	font-size: 1.4em;
+    padding: .5em 1em;
+    min-width: 10vw;
+    text-decoration:none;
+	transition: all .1s ease-in-out;
+	outline: none;
+}
+
+.button.add {
+	background-color:rgb(223, 72, 93, .8);
+	color: black;
+	border: 1px solid black;
+	position: fixed;
+	top: 85%;
+	left: 75%;
+	opacity: 0;
+	transition: all 1s ease;
+}
+
+.button.add.active {
+	opacity: 1;
+	transition: all 1s ease;
+	z-index: 101;
+}
+
+
+.button.add:hover {
+	background-color:rgb(223, 72, 93, .94);
+}
+
+.button:hover {
+	background-color:rgba(255, 255, 255, 0.4);
+}
