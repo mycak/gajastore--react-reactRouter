@@ -4,6 +4,7 @@ import '../styles/Article.css';
 const Article = ({img}) => {
     return (
         <div className="article--container">
+            <h3>Wino Shardoney 'Jesień</h3>
             <div className="article--photo">
                 <img alt={'item'} src={img}/>
             </div>

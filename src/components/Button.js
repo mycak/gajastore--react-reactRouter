@@ -14,7 +14,7 @@ const Button = ({name, addClass, navInAt, onClick}) => {
     };
 
     return (
-        <div className="button--container">
+        <div>
             <button onClick={onClick} className={`button ${addClass} ${checkNav(navInAt)}`}>{name}</button>
         </div>
     )

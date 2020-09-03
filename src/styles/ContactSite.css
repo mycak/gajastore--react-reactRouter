@@ -1,7 +1,7 @@
 .contact--container {
     padding-top: 6em;
     width: 100%;
-    background-color: rgb(0, 0, 0, .75);
+    background-color: rgb(0, 0, 0, .7);
     min-height: 100vh;
 }
 
@@ -13,7 +13,7 @@
 .contact--container p {
     margin-left: 3em;
     margin-right: 3em;
-    font-size: 1.5em ;
+    font-size: 1.2em ;
 }
 
 .icons--container {

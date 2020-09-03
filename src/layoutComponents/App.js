@@ -6,13 +6,10 @@ import Curio from './Curio';
 import ContactSite from './ContactSite';
 import Route from './Route';
 import Shop from './Shop';
+import Button from '../components/Button';
+import base from '../base';
 
 import "../styles/App.css";
-import img1 from '../images/przemek.jpg';
-import img2 from '../images/truck.svg';
-import text from '../baseText';
-import Button from '../components/Button';
-
 
 
 const App = () => {
@@ -25,55 +22,40 @@ const App = () => {
         window.addEventListener('scroll', () => SetNavInAt(window.scrollY));
     },[])
 
-     // SMOTH SCROLL TO SECTIONS
-
-    // useEffect(() => {
-    //     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    //         anchor.addEventListener('click', function (e) {
-    //             e.preventDefault();
-    //             document.querySelector(this.getAttribute('href')).scrollIntoView({
-    //                 behavior: 'smooth'
-    //             });
-    //         });
-    //     });
-    // },[])
-    //
-
-
-    // TO RENDERING
+     // TO RENDERING
 
     return (
         <div className="App" id="hero">
             <Route path='/'>
+                <Navigation navInAt={navInAt} />
+                <Button name={'Oferta'} addClass={'add'} navInAt={navInAt} onClick={goToShopSite}/>
                 <header className="header">
                     <div className="header--container">
-                        <Navigation navInAt={navInAt} />
                         <Hero />
                     </div>
                 </header>
 
                 <section className="section--decription--history" id="history">
-                    <ContentModul img={img1} direction={''} text={text.modulHistory} />
-                    <Button name={'Oferta'} addClass={'add'} navInAt={navInAt} onClick={goToShopSite}/>
+                    <ContentModul direction={''} base={base.modulHistory} />
                 </section>
 
                 <section className="section--curios">
                     <div className="curios--container">
-                        <Curio img={img2} text={text.modulCurio.one}/>
-                        <Curio img={img2} text={text.modulCurio.one}/>
-                        <Curio img={img2} text={text.modulCurio.one}/>
+                        <Curio base={base.modulCurio.one}/>
+                        <Curio base={base.modulCurio.one}/>
+                        <Curio base={base.modulCurio.one}/>
                     </div>
                 </section>
 
                 <section className="section--description--shop" id="shop">
                     <div className="layer--grey--1">
-                        <ContentModul img={img1} direction={'reverse'} text={text.modulHistory} />
+                        <ContentModul direction={'reverse'} base={base.modulAboutShop.one} />
                     </div>
                     <div className="layer--grey--2">
-                        <ContentModul img={img1} text={text.modulHistory} />
+                        <ContentModul base={base.modulAboutShop.two} />
                     </div>
                     <div className="layer--grey--1">
-                        <ContentModul img={img1} direction={'reverse'} text={text.modulHistory} />
+                        <ContentModul direction={'reverse'} base={base.modulAboutShop.three} />
                     </div>
                 </section>
 

@@ -1,17 +1,17 @@
 import React from 'react';
 import '../styles/Curio.css';
 
-const Curio = ({img, text}) => {
+const Curio = ({base}) => {
     return (
         <div className="curio--container">
             <div className="curio--image">
-                <img src={img} className="filter--color" alt="img--curio" />
+                <img src={base.img} className="filter--color" alt="img--curio" />
             </div>
             <div className="curio--title">
-                <p>{text.title}</p>
+                <p>{base.title}</p>
             </div>
             <div className="curio--text">
-                <p>{text.text}</p>
+                <p>{base.text}</p>
             </div>
         </div>
     )

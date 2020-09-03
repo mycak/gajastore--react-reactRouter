@@ -1,19 +1,19 @@
 import React from 'react';
 import '../styles/ContentModul.css';
 
-const ContentModul = ({img, direction, text}) => {
+const ContentModul = ({direction, base}) => {
     return (
         <div className={`content--container ${direction}`}>
             <div className="content--text--container">
                 <div className="content--title">
-                    <h2>{text.title}</h2>
+                    <h2>{base.title}</h2>
                 </div>
                 <div className="content--text">
-                    <p>{text.text}</p>
+                    <p>{base.text}</p>
                 </div>
             </div>
             <div className="content--image">
-                <img src={img} alt="img" />
+                <img src={base.img} alt="img" />
             </div>
         </div>
     )
