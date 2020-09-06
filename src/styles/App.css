@@ -59,6 +59,7 @@
     margin: 0 auto;
     background-image: url('../images/kontakt.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;    background-attachment: fixed;
     background-size: cover;
     color: #fff;
     overflow: hidden;
